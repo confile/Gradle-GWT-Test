@@ -6,6 +6,7 @@ apply plugin: 'eclipse'
 apply plugin: 'jetty'
 
 
+
 sourceCompatibility = 1.7
 version = '1.0'
 
@@ -48,7 +49,8 @@ repositories {
 }
 
 dependencies {
-	apt 'com.google.dagger:dagger-compiler:2.0-SNAPSHOT:jar-with-dependencies'
+	apt name: 'dagger-compiler-2.0-20150122.022637-13-jar-with-dependencies'
+	compile name: 'dagger-compiler-2.0-20150122.022637-13-jar-with-dependencies'
 	
 	compile 'com.google.guava:guava:18.0'
 	compile 'com.google.guava:guava-gwt:18.0'
@@ -61,11 +63,11 @@ dependencies {
 
 // for local repositories
 // compile name: 'dagger-compiler-2.0-20150122.022637-13-jar-with-dependencies'
-//repositories {
-//	flatDir {
-//		dirs 'lib'
-//	}
-//}
+repositories {
+	flatDir {
+		dirs 'lib'
+	}
+}
 
 gwt {
 	gwtVersion='2.7.0'

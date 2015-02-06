@@ -1,7 +1,5 @@
 package test.client;
 
-import test.client.test2.MyWidgetGinjector;
-
 import com.google.gwt.core.client.EntryPoint;
 
 
