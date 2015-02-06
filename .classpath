@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer" exported="true"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER" exported="true"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+	<classpathentry kind="src" path="build/source/apt"/>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry sourcepath="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/ad97fe8faaf01a3d3faacecd58e8fa6e78a973ca/guava-18.0-sources.jar" kind="lib" path="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/418be347c254422b51adee3cacb10e3f69e279ec/guava-18.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.guava/guava-gwt/18.0/ed746e17631e0957ef400998c55fe9918f8079dd/guava-gwt-18.0-sources.jar" kind="lib" path="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.guava/guava-gwt/18.0/4ed3be97a1f2a31c4b0ed91a5ac6de83248db9e8/guava-gwt-18.0.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.guava/guava-gwt/18.0/e8b1909af995bda5e4f66e2deef2a5fa41240296/guava-gwt-18.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/mg/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar" kind="lib" path="/Users/mg/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/mg/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/70ec961c25111ed9015d1af77772d96383c2d238/javax.inject-1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.0-SNAPSHOT/bf4c5d4fc3a4587fa13422260292c82f0228060b/dagger-2.0-SNAPSHOT.jar" exported="true"/>
+	<classpathentry sourcepath="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.7.0/2abdc607f5101c9f431f1e671ee30061d42b8906/gwt-servlet-2.7.0-sources.jar" kind="lib" path="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.7.0/6d5ed85568c13295374ba24194a987c0d952f3eb/gwt-servlet-2.7.0.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.7.0/c9270b1341ae9087eb483a0305a2e556054fe5dc/gwt-servlet-2.7.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar" exported="true"/>
+	<classpathentry sourcepath="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-codeserver/2.7.0/657a855297f4e1e8f11c96983326a1fe23782f12/gwt-codeserver-2.7.0-sources.jar" kind="lib" path="/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-codeserver/2.7.0/74d5e4119d083f7ca97e3f01cbd666d025b314b3/gwt-codeserver-2.7.0.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/mg/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-codeserver/2.7.0/c9270b1341ae9087eb483a0305a2e556054fe5dc/gwt-codeserver-2.7.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+</classpath>

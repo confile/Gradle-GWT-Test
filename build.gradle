@@ -1,0 +1,125 @@
+apply plugin: 'java'
+apply plugin: 'apt'
+apply plugin: 'gwt'
+apply plugin: 'war'
+apply plugin: 'eclipse'
+apply plugin: 'jetty'
+
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+eclipse {
+	classpath {
+	   downloadSources=true
+	   downloadJavadoc=true
+	}
+}
+
+buildscript {
+	repositories {
+		mavenCentral()
+		jcenter()
+		maven {
+			url "https://oss.sonatype.org/content/repositories/snapshots/"
+		}
+	}
+	dependencies {
+		classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'		
+		classpath 'com.jimdo.gradle:gradle-apt-plugin:0.5-SNAPSHOT'
+	}
+}
+
+//sourceSets {
+//	apt{
+//		java{
+//			srcDir 'build/source/apt'
+//		}
+//	}
+//}
+
+
+repositories {
+    mavenCentral()
+	maven {
+		name = "sonatype"
+		url = "https://oss.sonatype.org/content/repositories/snapshots/"
+	}
+}
+
+dependencies {
+	apt 'com.google.dagger:dagger-compiler:2.0-SNAPSHOT:jar-with-dependencies'
+	
+	compile 'com.google.guava:guava:18.0'
+	compile 'com.google.guava:guava-gwt:18.0'
+	compile 'javax.inject:javax.inject:1'	
+	compile 'com.google.dagger:dagger:2.0-SNAPSHOT'
+	
+//	compile "compile configuration.apt.output"
+//	compile  fileTree(dir: 'build/source/apt', include: '*.java')
+}
+
+// for local repositories
+// compile name: 'dagger-compiler-2.0-20150122.022637-13-jar-with-dependencies'
+//repositories {
+//	flatDir {
+//		dirs 'lib'
+//	}
+//}
+
+gwt {
+	gwtVersion='2.7.0'
+	logLevel = 'INFO'
+	minHeapSize = "512M";
+	maxHeapSize = "1024M";
+	
+	
+	compiler {
+		strict = true;
+//		enableClosureCompiler = true; // activates -XenableClosureCompiler
+//		disableClassMetadata = true; // activates -XdisableClassMetadata
+//		disableCastChecking = true; // activates -XdisableCastChecking
+	}
+	
+//	src += files(sourceSets.apt.allJava.srcDirs)
+//	
+//	dev {
+//		noserver = true
+//		port = 1337
+//	}
+	
+	modules 'test.GWTT'		
+}
+
+tasks.withType(de.richsource.gradle.plugins.gwt.AbstractGwtActionTask) {
+	args '-XjsInteropMode', 'JS'
+}
+
+
+
+
+//dependencies {
+//	aptCompile 'com.google.dagger:dagger:2.0-SNAPSHOT'
+//	intTestRuntime 'org.ow2.asm:asm-all:4.0'
+//}
+
+//sourceSets {
+//	test {
+//		compileClasspath += configurations.apt
+//	}
+//}
+
+//sourceSets {
+//	main {
+//		java {
+//			srcDir 'src' //, 'build/source/apt']
+////			srcDir 'build/source/apt'
+//		}
+//	}
+//	build {
+//		source {
+//			srcDir 'apt'
+//		}
+//	}
+//}
+
